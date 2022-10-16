@@ -5,12 +5,11 @@
 #include <time.h>
 
 /**
+ * main-program entry point.
 
-   * main-program entry point.
+ * Return:0-no error,non zero value if error.
 
-    * Return:0-no error,non zero value if error.
-
-     **/
+**/
 
 int main(void)
 
@@ -26,7 +25,8 @@ int main(void)
 
 					if (n >  0)
 
-							{
+
+					{
 
 										printf("%d is positive\n", n);
 
