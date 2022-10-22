@@ -1,19 +1,3 @@
-# 0x03. C - More functions, more nested loops
-## About
-An introductory project on:
-- nested loops and how to use them
-- functions and how to use them
-- the difference between a declaration and a definition of a function
-- prototypes
-- scope of variables
-- header files and how to to use them with `#include`
-## Requirements
-- Ubuntu 14.04
-- gcc 4.8.4
-- no standard library functions
-- allowed to use [putchar](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c)
-## File Descriptions
-### Mandatory
 **[0-isupper.c](0-isupper.c)** - function that checks for uppercase character.
 
 **[1-isdigit.c](1-isdigit.c)** - function that checks for a digit (0 through 9).
