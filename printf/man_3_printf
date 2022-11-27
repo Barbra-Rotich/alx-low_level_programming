@@ -1,0 +1,169 @@
+." Process this file with
+." groff -man -Tascii test_script.1
+."
+.TH _PRINTF "1" "October 2020" "Holberton School CH13" "User Commands"
+
+.SH NAME
+.B _printf
+- format and print data
+
+.SH SYNOPSIS
+.B _printf
+\fIFORMAT \fR[\fIARGUMENT\fR] \fR[...\fR]
+.br
+
+.SH DESCRIPTION
+.PP
+Print ARGUMENT(s) according to FORMAT
+
+.TP
+.B 
+FORMAT identifies a value after his invocation \fR[\fI%\fR[\fIformater\fR]\fR] 
+.TP
+.B
+These \fIformater\fR especifies the output way of a variable or the same FORMAT argument string: 
+
+.TP
+.B
+% - c
+Write in the output console a int argument converted to an unsigned char
+
+.TP
+.B
+% - s
+The \fIconst char *\fR argument is expected to be a pointer to an array of character type(pointer to an string). Characters from the array are written up to
+
+.TP
+.B
+% - %
+If after the \fIFORMAT\fR is another '%' the function just print the percent in the output console
+
+
+
+.SH OBJECT
+
+.PP
+The function 
+.B
+_printf 
+uses a base structure to define the sub-function to execute after a coincidence in the \fIformater\fR identifier 
+
+.PP
+Grapic representation of the primary structure defining the 
+.I
+formater 
+and his function
+
+
+.RS 1.0i
+
+.TS
+tab(@), left, box;
+cB
+cB | c
+r | l.
+STRUCTURE
+_
+formater@Function to use
+_
+Char let @ Int (*f)()
+.TE
+.RE
+
+
+.RS 0.2i
+
+.TS
+tab (@);
+c c c.
+formater@Function@Comment
+_
+T{
+\(aqc\(aq
+T}@int print_char(va_list c)@First commit @
+T{
+\(aqs\(aq
+T}@int print_string(va_list s)@First commit
+T{
+\(aqd\(aq
+T}@team3_value1, team3_value2@Second commit
+T{
+\(aqi\(aq
+T}@team4_value1, team4_value2@Second commit
+.TE
+
+.TP
+
+.TP
+.RE
+.PP
+
+The \fBformater\fP, identifies the "char[x]" after the universal \fBFORMAT(%)\fP, passed to analize and execute the function with the list of arguments passed by (va_list) 
+
+.SH AUTHOR
+.PP
+Written by Wiston Venera - Nicolas Gonzalez
+
+
+.SH REPORTING BUGS
+.PP
+For reporting troubleshoots executing the program with edge cases or memory leak information, please reffer to someone of the colaborators in this project, or be free to send us a mail to cisfun.com
+
+.PP
+ 
+
+.SH EXIT STATUS
+.TP
+.B
+t
+Size of bytes used on execution 
+
+.TP
+.B
+-1
+\fIFORMAT\fP argument is NULL or empty, execution error
+
+
+.SH SEE ALSO
+.BR https://www.holberton.com
+.PP
+.B Full project documentation based on a project to emulate a copy of printf with formater specifiers
+
+
+.SH COPYRIGHT
+.PP
+Copyright 2020 HolbertonSchool. CH13.
+.PP 
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+https://www.cisfun.com
+
+
+.SH CREDITS
+.PP
+Holberton School - Cohort 13
+.TP
+Project _printf by:
+
+.PP
+.B
+-https://www.github.com/cnicogd
+
+.PP
+.B
+-https://www.github.com/wisvem
+
+.PP
+.B
+-Edher Ramirez
+.SH
+.PP
+
